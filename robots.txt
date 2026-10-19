@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://onejudge69.github.io/1969-gto-judge-pattern-research/sitemap.xml
