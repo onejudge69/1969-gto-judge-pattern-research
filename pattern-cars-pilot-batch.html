@@ -326,34 +326,10 @@ footer .footer-meta a{min-height:48px;padding:10px 8px}
   #don-00017-cars>p{font-size:.9rem;margin:0 0 .6em}
 }
 
-/* Mobile Menu + desktop full nav */
-details.mobile-nav{margin:0}
-details.mobile-nav>summary{list-style:none;cursor:pointer}
-details.mobile-nav>summary::-webkit-details-marker{display:none}
-@media (min-width:701px){
-  details.mobile-nav>summary{display:none!important}
-  details.mobile-nav nav{display:flex!important;flex-wrap:wrap;gap:8px;align-items:center}
-}
-@media (max-width:700px){
-  .bar{display:flex;flex-direction:column;align-items:stretch;gap:10px}
-  .brand{margin:0}
-  details.mobile-nav>summary{
-    display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;
-    border-radius:999px;background:#222;color:#fff;font-weight:800;border:2px solid #444;width:fit-content
-  }
-  details.mobile-nav>summary::after{content:" ▾";font-size:.85em;opacity:.85}
-  details.mobile-nav[open]>summary::after{content:" ▴"}
-  details.mobile-nav:not([open]) nav{display:none!important}
-  details.mobile-nav[open] nav{
-    display:flex!important;flex-wrap:wrap;gap:8px;margin-top:10px
-  }
-  details.mobile-nav[open] nav a{flex:0 0 auto}
-  /* Prefer horizontal scroll row as alternate when menu open still wraps — also provide scroll strip */
-  .nav-scroll{
+/* Prefer horizontal scroll row as alternate when menu open still wraps — also provide scroll strip */
     display:flex;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;gap:8px;
     padding:2px 0 8px;max-width:100%;scrollbar-width:thin
   }
-  .nav-scroll a{flex:0 0 auto;white-space:nowrap}
 }
 /* Desktop content width */
 @media (min-width:1100px){
@@ -361,7 +337,38 @@ details.mobile-nav>summary::-webkit-details-marker{display:none}
   .home-car-hero .photo-row{grid-template-columns:1.15fr 1fr}
   .don-siblings{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
-</style></head><body><header class="top"><div class="bar"><p class="brand"><b>1969 Pontiac GTO Judge: The Documented History</b></p><details class="mobile-nav"><summary>Menu</summary><nav><a href="index.html">Home</a><a href="pattern-cars-pilot-batch.html" aria-current="page">DON 00017</a><a href="judge-timeline-1968-1969.html">Timeline</a><a href="research-history.html">Research history</a><a href="sources-evidence-policy.html">Sources &amp; policy</a><a href="open-questions.html">Open questions</a><a href="glossary.html">Glossary</a><a href="how-to-read-phs-papers.html">Reading PHS papers</a><a href="about-the-researcher.html">About</a><a href="submit-your-documents.html">Submit Your Documents</a></nav></details></div></header><div class="stripes" aria-hidden="true"></div>
+
+/* Site nav: checkbox Menu on phone; always-visible pills on desktop (no JS) */
+.nav-toggle{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.nav-toggle-btn{display:none;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;border-radius:999px;background:#222;color:#fff;font-weight:800;border:2px solid #444;cursor:pointer;width:fit-content;user-select:none}
+.nav-toggle-btn::after{content:" ▾";font-size:.85em;opacity:.85}
+.nav-toggle:checked + .nav-toggle-btn::after{content:" ▴"}
+@media (min-width:701px){
+  .nav-toggle-btn{display:none!important}
+  header .bar{display:block}
+  header nav{display:flex!important;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+}
+@media (max-width:700px){
+  header .bar{display:flex;flex-direction:column;align-items:stretch;gap:10px}
+  .nav-toggle-btn{display:inline-flex}
+  .nav-toggle:not(:checked) ~ nav{display:none!important}
+  .nav-toggle:checked ~ nav{display:flex!important;flex-wrap:wrap;gap:8px;margin-top:4px}
+  .nav-toggle:checked ~ nav a{flex:0 0 auto}
+}
+/* Home hero photos: never paint as empty black slabs */
+.home-car-hero figure.photo{background:#ece8e0}
+.home-car-hero figure.photo img{
+  width:100%!important;max-width:100%!important;height:auto!important;
+  aspect-ratio:auto;object-fit:contain;object-position:center;background:#ece8e0;
+  display:block;border:0;border-radius:0
+}
+.home-car-hero .photo-row{align-items:start}
+.home-car-hero figure.doc{background:#1a1a1a}
+.home-car-hero figure.doc img{
+  width:100%!important;max-width:100%!important;height:auto!important;
+  aspect-ratio:auto;object-fit:contain;background:#1a1a1a;padding:6px
+}
+</style></head><body><header class="top"><div class="bar"><p class="brand"><b>1969 Pontiac GTO Judge: The Documented History</b></p><input type="checkbox" id="nav-toggle" class="nav-toggle"><label for="nav-toggle" class="nav-toggle-btn">Menu</label><nav><a href="index.html">Home</a><a href="pattern-cars-pilot-batch.html" aria-current="page">DON 00017</a><a href="judge-timeline-1968-1969.html">Timeline</a><a href="research-history.html">Research history</a><a href="sources-evidence-policy.html">Sources &amp; policy</a><a href="open-questions.html">Open questions</a><a href="glossary.html">Glossary</a><a href="how-to-read-phs-papers.html">Reading PHS papers</a><a href="about-the-researcher.html">About</a><a href="submit-your-documents.html">Submit Your Documents</a></nav></div></header><div class="stripes" aria-hidden="true"></div>
 <div class="hero"><div class="in"><p class="page-updated">Last updated: November 9, 2026</p><h1>1969 GTO Judge Pattern Cars and the DON 00017 Cars</h1></div></div>
 <main><section class="card declaration" id="lead-declaration">
 <p class="decl-kicker">Opens this page · Author’s declaration</p>
