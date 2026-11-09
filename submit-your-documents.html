@@ -206,16 +206,52 @@ footer .footer-meta a{min-height:48px;padding:10px 8px}
 .corr-appendix details[open]>summary::before{content:"▾ "}
 .corr-appendix .corr-body{padding:0 16px 16px;font-size:.95rem;line-height:1.55;color:var(--ink)}
 .corr-appendix .corr-date{display:block;font-size:.85rem;font-weight:700;color:var(--mut);margin-bottom:6px}
-</style></head><body><header class="top"><div class="bar"><p class="brand"><b>1969 Pontiac GTO Judge: The Documented History</b></p><nav><a href="index.html">Home</a><a href="pattern-cars-pilot-batch.html">DON 00017</a><a href="judge-timeline-1968-1969.html">Timeline</a><a href="research-history.html">Research history</a><a href="sources-evidence-policy.html">Sources &amp; policy</a><a href="open-questions.html">Open questions</a><a href="glossary.html">Glossary</a><a href="how-to-read-phs-papers.html">Reading PHS papers</a><a href="about-the-researcher.html">About</a><a href="submit-your-documents.html" aria-current="page">Submit Your Documents</a></nav></div></header><div class="stripes" aria-hidden="true"></div>
+
+/* Mobile Menu + desktop full nav */
+details.mobile-nav{margin:0}
+details.mobile-nav>summary{list-style:none;cursor:pointer}
+details.mobile-nav>summary::-webkit-details-marker{display:none}
+@media (min-width:701px){
+  details.mobile-nav>summary{display:none!important}
+  details.mobile-nav nav{display:flex!important;flex-wrap:wrap;gap:8px;align-items:center}
+}
+@media (max-width:700px){
+  .bar{display:flex;flex-direction:column;align-items:stretch;gap:10px}
+  .brand{margin:0}
+  details.mobile-nav>summary{
+    display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;
+    border-radius:999px;background:#222;color:#fff;font-weight:800;border:2px solid #444;width:fit-content
+  }
+  details.mobile-nav>summary::after{content:" ▾";font-size:.85em;opacity:.85}
+  details.mobile-nav[open]>summary::after{content:" ▴"}
+  details.mobile-nav:not([open]) nav{display:none!important}
+  details.mobile-nav[open] nav{
+    display:flex!important;flex-wrap:wrap;gap:8px;margin-top:10px
+  }
+  details.mobile-nav[open] nav a{flex:0 0 auto}
+  /* Prefer horizontal scroll row as alternate when menu open still wraps — also provide scroll strip */
+  .nav-scroll{
+    display:flex;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;gap:8px;
+    padding:2px 0 8px;max-width:100%;scrollbar-width:thin
+  }
+  .nav-scroll a{flex:0 0 auto;white-space:nowrap}
+}
+/* Desktop content width */
+@media (min-width:1100px){
+  main,.hero .in,.bottom-navigation,.appendix-link,.page-flow{max-width:1120px}
+  .home-car-hero .photo-row{grid-template-columns:1.15fr 1fr}
+  .don-siblings{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+</style></head><body><header class="top"><div class="bar"><p class="brand"><b>1969 Pontiac GTO Judge: The Documented History</b></p><details class="mobile-nav"><summary>Menu</summary><nav><a href="index.html">Home</a><a href="pattern-cars-pilot-batch.html">DON 00017</a><a href="judge-timeline-1968-1969.html">Timeline</a><a href="research-history.html">Research history</a><a href="sources-evidence-policy.html">Sources &amp; policy</a><a href="open-questions.html">Open questions</a><a href="glossary.html">Glossary</a><a href="how-to-read-phs-papers.html">Reading PHS papers</a><a href="about-the-researcher.html">About</a><a href="submit-your-documents.html" aria-current="page">Submit Your Documents</a></nav></details></div></header><div class="stripes" aria-hidden="true"></div>
 <div class="hero"><div class="in"><p class="page-updated">Last updated: November 7, 2026</p><h1>Submit Your 1969 GTO Judge Documents</h1></div></div>
 <main><section class="card"><p class="sendwrap"><a class="sendbtn" href="mailto:OneJudge69@gmail.com?subject=1969%20Judge%20documents%20submission&amp;body=Car%20%28last%206%20of%20VIN%20optional%29%3A%0A%0APhotos%20attached%3A%20PHS%20docs%20/%20cowl%20tag%20/%20broadcast%20sheet%20/%20dealer%20invoice%20/%20window%20sticker%20/%20other%0A%0AMay%20I%20credit%20you%20by%20name%3F%20%28yes/no%29%0A%0AAnything%20you%20know%20about%20the%20car%3A%0A">&#128247; Send Your Photos</a></p>
 <p class="sendnote">Tap the button, attach photos from your phone, and send. No sign-in needed. Owner names and full VINs stay private.</p>
-<p>If you own a 1969 GTO Judge, or hold its papers, your documents can help fill gaps in the record. Early January–February 1969 cars and pattern cars are especially needed: Carousel Red cars, low dealer order numbers (000xx), and ship-to codes ending in 991, 992, 993 or 995.</p>
+<p>If you own a 1969 GTO Judge, or hold its papers, your documents can help fill gaps in the record. Early January–February 1969 cars and pattern cars are especially needed: Carousel Red cars, low dealer order numbers · 000xx, and ship-to codes ending in 991, 992, 993 or 995.</p>
 </section><section class="card"><h2>What to send</h2><div class="tw"><table><tr><th>Item</th><th>How it is used</th></tr>
 <tr><td>The full PHS invoice, every page, uncropped</td><td>Tier 2 traceable copy. It shows the plant, dealer order number, ship-to, dealer, dates and code 554. Cropped or edited images carry less weight.</td></tr>
-<tr><td>Cowl tag (data plate) photo, clear and straight-on</td><td>Tier 1 when photographed on the car. It shows the build week, trim, paint and body number.</td></tr>
+<tr><td>Cowl tag · data plate photo, clear and straight-on</td><td>Tier 1 when photographed on the car. It shows the build week, trim, paint and body number.</td></tr>
 <tr><td>VIN tag photo</td><td>Tier 1. It ties the other papers to the car.</td></tr>
-<tr><td>Broadcast (build) sheet</td><td>Tier 1. It shows the order, the charge-to and ship-to, and WT1.</td></tr>
+<tr><td>Broadcast · build sheet</td><td>Tier 1. It shows the order, the charge-to and ship-to, and WT1.</td></tr>
 <tr><td>Dealer papers: original bill of sale, window sticker, order form, shipping papers</td><td>Tier 1 if original. They show where the car first went.</td></tr>
 <tr><td>Stories, registry entries, listings</td><td>Tier 4 leads only. Welcome, but they are not treated as facts.</td></tr></table></div>
 <p>The same VIN readable on the invoice, the broadcast sheet and the original sale paper makes the strongest case.</p>
