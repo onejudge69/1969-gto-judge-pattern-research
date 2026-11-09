@@ -278,13 +278,91 @@ footer .footer-meta a{min-height:48px;padding:10px 8px}
 .declaration .pdf-link a{font-weight:800;color:var(--red-d);text-decoration:none}
 .declaration .pdf-link a:hover{text-decoration:underline;text-underline-offset:3px}
 @media(max-width:700px){.declaration{padding:14px}.declaration table{font-size:.82rem}}
+
+/* Declaration: compact summary + scrollable full table (override stacked-table mobile rule) */
+.decl-summary{list-style:none;margin:0 0 .75em;padding:0;border:1px solid #e4ddd0;border-radius:12px;overflow:hidden}
+.decl-summary li{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline;padding:9px 12px;border-bottom:1px solid #ece6db;font-size:.92rem;line-height:1.35;background:#fff}
+.decl-summary li:last-child{border-bottom:0}
+.decl-summary li.lead{background:#fff8f0;border-left:5px solid var(--red)}
+.decl-summary .vin{font-weight:900}
+.decl-summary .meta{color:var(--ink)}
+.decl-summary .plant{color:var(--mut);font-weight:700;font-size:.82rem;text-transform:uppercase;letter-spacing:.04em}
+.declaration details.full-decl{margin:.5em 0 .2em;border:1px solid #e4ddd0;border-radius:12px;background:#faf8f4;padding:0}
+.declaration details.full-decl>summary{cursor:pointer;list-style:none;padding:12px 14px;font-weight:800}
+.declaration details.full-decl>summary::-webkit-details-marker{display:none}
+.declaration details.full-decl>summary::before{content:"▸ ";color:var(--red)}
+.declaration details.full-decl[open]>summary::before{content:"▾ "}
+.declaration details.full-decl .tw{margin:0 12px 12px}
+@media (max-width:700px){
+  .declaration table,.declaration thead,.declaration tbody,.declaration tr,.declaration th,.declaration td{display:revert !important;width:auto !important}
+  .declaration table{display:table !important;width:max-content !important;min-width:640px;border-collapse:collapse !important;font-size:.78rem;margin:0}
+  .declaration thead{display:table-header-group !important}
+  .declaration tbody{display:table-row-group !important}
+  .declaration tr,.declaration tr:first-child:has(th){display:table-row !important;background:transparent !important;border:0 !important;border-radius:0 !important;margin:0 !important;overflow:visible !important;flex-wrap:nowrap !important}
+  .declaration th,.declaration td{display:table-cell !important;border:1px solid #e0d9ce !important;padding:6px 8px !important;white-space:nowrap;border-radius:0 !important;width:auto !important}
+  .declaration th{background:#f3efe7 !important;color:var(--ink) !important;font-weight:800}
+  .declaration .tw{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;border:1px solid #e8e1d4;border-radius:10px}
+  .featured-judge{margin-top:.55em}
+  .featured-judge .thumbs.hero-thumbs{grid-template-columns:1fr !important}
+  .featured-judge .thumbs.hero-thumbs .tg img{max-width:100%!important;width:100%!important;height:auto!important}
+  .don-card .thumbs.compact-thumbs{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+}
+
+@media (max-width:700px){
+  .featured-judge .fact-grid{grid-template-columns:1fr 1fr;gap:8px;margin:.6em 0}
+  .featured-judge .fact-grid li{padding:8px 9px;font-size:.82rem}
+  .featured-judge .why{font-size:.98rem;margin:0 0 .55em}
+  .declaration .decl-lede{font-size:.92rem;margin:0 0 .55em}
+  .declaration{margin:0 0 .8em;padding:14px}
+}
+
+@media (max-width:700px){
+  .hero .in{padding:22px 14px 26px !important}
+  .hero h1{font-size:1.55rem !important;line-height:1.15}
+  .hero h1::after{width:72px;height:7px;margin-top:12px}
+  .page-updated{margin:0 0 .4em;font-size:.78rem}
+  #don-00017-cars{padding-top:14px}
+  #don-00017-cars>h2{font-size:1.15rem;margin:0 0 .4em}
+  #don-00017-cars>p{font-size:.9rem;margin:0 0 .6em}
+}
 </style></head><body><header class="top"><div class="bar"><p class="brand"><b>1969 Pontiac GTO Judge: The Documented History</b></p><nav><a href="index.html">Home</a><a href="pattern-cars-pilot-batch.html" aria-current="page">DON 00017</a><a href="judge-timeline-1968-1969.html">Timeline</a><a href="research-history.html">Research history</a><a href="sources-evidence-policy.html">Sources &amp; policy</a><a href="open-questions.html">Open questions</a><a href="glossary.html">Glossary</a><a href="how-to-read-phs-papers.html">Reading PHS papers</a><a href="about-the-researcher.html">About</a><a href="submit-your-documents.html">Submit Your Documents</a></nav></div></header><div class="stripes" aria-hidden="true"></div>
 <div class="hero"><div class="in"><p class="page-updated">Last updated: November 9, 2026</p><h1>1969 GTO Judge Pattern Cars and the DON 00017 Cars</h1></div></div>
 <main><section class="card declaration" id="lead-declaration">
 <p class="decl-kicker">Opens this page · Author’s declaration</p>
 <h2>Al Diaz’s Lead Production Car Declaration</h2>
-<p class="decl-lede">Al Diaz’s July 2026 declaration names VIN <b>242379G125205</b> (Framingham) as his lead production car for DON 00017. The table below is the web reading of that declaration. Claims such as “earliest” and “lead car” are <span class="lab hyp">Hypothesis</span> — Al’s stated position — except where a cell is labeled as a documented fact from the papers. The original PDF is linked; this web table uses document-corrected figures.</p>
-<p class="decl-meta">Signed Al Diaz · July 2026 · Sources named in the PDF: PHS invoice, broadcast/build sheet, Fisher Body cowl tag.</p>
+<p class="decl-lede">July 2026 — Al names <b>242379G125205</b> as his lead DON 00017 car. “Earliest” / “lead” = <span class="lab hyp">Hypothesis</span>. Figures match the papers.</p>
+<ul class="decl-summary" aria-label="DON 00017 cars at a glance">
+<li class="lead"><span class="plant">1 · Framingham (G)</span> <span class="vin">242379G125205</span> <span class="meta">cowl 01B · invoice ZGA 453185 · FM 56607</span></li>
+<li><span class="plant">2 · Arlington (R)</span> <span class="vin">242379R130631</span> <span class="meta">cowl 01D · invoice ZRA 48845?</span></li>
+<li><span class="plant">3 · Fremont (Z)</span> <span class="vin">242379Z114103</span> <span class="meta">cowl 01E · invoice ZZA 468236</span></li>
+<li><span class="plant">4 · Atlanta (A)</span> <span class="vin">242379A119165</span> <span class="meta">cowl 02A · invoice ZAA 544415</span></li>
+<li><span class="plant">5 · Atlanta (A)</span> <span class="vin">242379A120714</span> <span class="meta">cowl 02C · invoice ZAB 55667?</span></li>
+</ul>
+</section>
+<section class="card" id="don-00017-cars">
+<h2>The five DON 00017 cars, one per zone</h2>
+<p>Featured next: Al’s Framingham Judge and its documents. Other cars follow in compact cards. One car per zone. <span class="lab fact">Documented fact</span> (Al’s ruling, Oct 20, 2026).</p>
+<div class="featured-judge" id="g125205">
+<p class="kicker">Featured · Al’s car · Why this site exists</p>
+<h3>Framingham Judge VIN 242379G125205</h3>
+<p style="margin:.6em 0 .35em;font-weight:800">Documents for this car</p>
+<div class="thumbs hero-thumbs">
+<figure class="tg doc"><a href="images/don00017-g125205-phs-invoice.jpg" target="_blank" rel="noopener" aria-label="Open full-size PHS invoice for 242379G125205"><img src="images/don00017-g125205-phs-invoice-hero.jpg" loading="eager" fetchpriority="high" decoding="async" width="560" height="449" alt="PHS invoice ZGA 453185 for VIN 242379G125205, DON 00017, Allen Pontiac Belleville NJ"></a><figcaption><b>PHS invoice ZGA 453185, 01/30/69</b> — DON 00017; ship-to 29 991; Allen Pontiac. <span class="lab fact">Documented fact</span></figcaption></figure>
+<figure class="tg doc"><a href="images/don00017-g125205-cowl-fm56607.jpg" target="_blank" rel="noopener" aria-label="Open full-size cowl tag FM 56607"><img src="images/don00017-g125205-cowl-fm56607-hero.jpg" loading="eager" fetchpriority="high" decoding="async" width="560" height="358" alt="Cowl tag FM 56607: TR 257, paint 72 72, date 01B" decoding="async"></a><figcaption><b>Cowl tag FM 56607</b> — TR 257 Parchment, paint 72 72, 01B. <span class="lab fact">Documented fact</span></figcaption></figure>
+<figure class="tg doc"><a href="images/don00017-g125205-broadcast.jpg" target="_blank" rel="noopener" aria-label="Open full-size broadcast sheet for 242379G125205"><img src="images/don00017-g125205-broadcast-hero.jpg" loading="eager" fetchpriority="high" decoding="async" width="560" height="433" alt="Broadcast sheet order number 000017 for Framingham Judge 242379G125205" decoding="async"></a><figcaption><b>Broadcast sheet</b> — order number 000017, matching DON 00017. <span class="lab fact">Documented fact</span></figcaption></figure>
+</div>
+<p class="why">Al’s car — the reason for this site. Earliest invoice date (01/30/69) and cowl week (01B) among the five DON 00017 cars on file.</p>
+<ul class="fact-grid">
+<li><b>VIN / plant</b>242379G125205 · Framingham (G)</li>
+<li><b>DON</b>00017 <span class="lab fact">Documented fact</span></li>
+<li><b>Cowl</b>FM 56607 · 01B · TR 257 Parchment · paint 72 72 Carousel Red <span class="lab fact">Documented fact</span></li>
+<li><b>PHS invoice</b>ZGA 453185 · shipped 01/30/69 · zone 29 991 · Allen Pontiac, Belleville, N.J. <span class="lab fact">Documented fact</span></li>
+<li><b>Transmission</b>TURB/HYDR (351) <span class="lab fact">Documented fact</span></li>
+<li><b>Engine</b>YZ <span class="lab fact">Documented fact</span></li>
+</ul>
+<p style="margin:.75em 0 0;font-size:.92rem">First Framingham Judge (Framingham only). <span class="lab fact">Documented fact</span> (Al’s ruling, Oct 20, 2026). Nationwide “first” is not claimed. <span class="lab hyp">Hypothesis</span></p>
+</div>
+<div class="declaration" style="margin:1em 0 1.2em;padding:0;border:0;box-shadow:none;background:transparent"><details class="full-decl"><summary>Full declaration table</summary>
 <div class="tw"><table>
 <tr>
 <th>#</th><th>Plant</th><th>VIN</th><th>DON</th><th>Cowl date</th><th>Invoice no.</th><th>Allocation</th><th>Trans</th><th>Interior</th><th>Key references</th>
@@ -350,30 +428,8 @@ footer .footer-meta a{min-height:48px;padding:10px 8px}
 <td>PHS + cowl tag</td>
 </tr>
 </table></div>
+</details>
 <p class="pdf-link"><a href="docs/al-diaz-lead-production-car-declaration-july-2026.pdf" download>Download original PDF declaration (July 2026)</a> — web table reflects document corrections; earlier PDF wording is kept on the appendix.</p>
-</section>
-<section class="card" id="don-00017-cars">
-<h2>The five DON 00017 cars, one per zone</h2>
-<p>DON 00017 was one car per zone, not a five-car batch one per plant. <span class="lab fact">Documented fact</span> (Al’s ruling, Oct 20, 2026). Al’s Framingham car is featured first; the other four follow in the same compact card style.</p>
-<div class="featured-judge" id="g125205">
-<p class="kicker">Featured · Al’s car · Why this site exists</p>
-<h3>Framingham Judge VIN 242379G125205</h3>
-<p class="why">This Framingham-built DON 00017 Judge is the reason for this website. Its papers—PHS invoice, cowl tag and broadcast sheet—opened the wider look at the five DON 00017 cars and the Pontiac records behind them. It has the earliest invoice date and earliest cowl week of the five DON 00017 cars on file.</p>
-<ul class="fact-grid">
-<li><b>VIN / plant</b>242379G125205 · Framingham (G)</li>
-<li><b>DON</b>00017 <span class="lab fact">Documented fact</span></li>
-<li><b>Cowl</b>FM 56607 · 01B · TR 257 Parchment · paint 72 72 Carousel Red <span class="lab fact">Documented fact</span></li>
-<li><b>PHS invoice</b>ZGA 453185 · shipped 01/30/69 · zone 29 991 · Allen Pontiac, Belleville, N.J. <span class="lab fact">Documented fact</span></li>
-<li><b>Transmission</b>TURB/HYDR (351) <span class="lab fact">Documented fact</span></li>
-<li><b>Engine</b>YZ <span class="lab fact">Documented fact</span></li>
-</ul>
-<p>Earliest invoice date (01/30/69) and earliest cowl week (01B) among the five DON 00017 cars. <span class="lab fact">Documented fact</span> (Tier 2). First Framingham Judge (Framingham only). <span class="lab fact">Documented fact</span> (Al’s ruling, Oct 20, 2026). “First Judge built nationwide” is not claimed here. <span class="lab hyp">Hypothesis</span> / unresolved on the papers currently filed.</p>
-<p>Tap a larger image to open full size.</p>
-<div class="thumbs hero-thumbs">
-<figure class="tg doc"><a href="images/don00017-g125205-phs-invoice.jpg" target="_blank" rel="noopener" aria-label="Open full-size PHS invoice for 242379G125205"><img src="images/don00017-g125205-phs-invoice-hero.jpg" width="560" height="449" alt="PHS invoice ZGA 453185 for VIN 242379G125205, DON 00017, Allen Pontiac Belleville NJ" decoding="async"></a><figcaption><b>PHS invoice ZGA 453185, 01/30/69</b> — DON 00017; ship-to 29 991; Allen Pontiac. <span class="lab fact">Documented fact</span></figcaption></figure>
-<figure class="tg doc"><a href="images/don00017-g125205-cowl-fm56607.jpg" target="_blank" rel="noopener" aria-label="Open full-size cowl tag FM 56607"><img src="images/don00017-g125205-cowl-fm56607-hero.jpg" width="560" height="358" alt="Cowl tag FM 56607: TR 257, paint 72 72, date 01B" decoding="async"></a><figcaption><b>Cowl tag FM 56607</b> — TR 257 Parchment, paint 72 72, 01B. <span class="lab fact">Documented fact</span></figcaption></figure>
-<figure class="tg doc"><a href="images/don00017-g125205-broadcast.jpg" target="_blank" rel="noopener" aria-label="Open full-size broadcast sheet for 242379G125205"><img src="images/don00017-g125205-broadcast-hero.jpg" width="560" height="433" alt="Broadcast sheet order number 000017 for Framingham Judge 242379G125205" decoding="async"></a><figcaption><b>Broadcast sheet</b> — order number 000017, matching DON 00017. <span class="lab fact">Documented fact</span></figcaption></figure>
-</div>
 </div>
 <h3 class="siblings-label" style="margin:1.4em 0 .55em;font-size:1.05rem;color:var(--mut);font-weight:800;letter-spacing:.02em;text-transform:uppercase">The other DON 00017 cars</h3>
 <p style="margin:0 0 .8em;font-size:.95rem;max-width:68ch">Same dealer order number, different plants and zones. Short notes and small document thumbs; open a thumbnail for the full image.</p>
@@ -392,7 +448,7 @@ footer .footer-meta a{min-height:48px;padding:10px 8px}
 <div class="thumbs compact-thumbs">
 <figure class="tg doc"><a href="images/don00017-a119165-phs-invoice.jpg" target="_blank" rel="noopener"><img src="images/don00017-a119165-phs-invoice-compact.jpg" width="168" height="126" alt="PHS invoice for 242379A119165" loading="lazy" decoding="async"></a><figcaption>Invoice</figcaption></figure>
 <figure class="tg doc"><a href="images/don00017-a119165-cowl-atl514562.jpg" target="_blank" rel="noopener"><img src="images/don00017-a119165-cowl-atl514562-compact.jpg" width="168" height="80" alt="Cowl tag ATL 514562" loading="lazy" decoding="async"></a><figcaption>Cowl ATL 514562</figcaption></figure>
-</div>
+<figure class="tg doc"><a href="images/don00017-a119165-vin-plate.jpg" target="_blank" rel="noopener"><img src="images/don00017-a119165-vin-plate-compact.jpg" width="168" height="100" alt="Dash VIN plate 242379A119165" loading="lazy" decoding="async"></a><figcaption>VIN plate</figcaption></figure></div>
 </article>
 <article class="don-card" id="a120714">
 <h3>Atlanta · 242379A120714</h3>
@@ -412,6 +468,10 @@ footer .footer-meta a{min-height:48px;padding:10px 8px}
 <a class="more" href="arlington-judge-r130631.html">Full Arlington page →</a>
 </article>
 </div>
+</section>
+
+
+
 </section>
 
 <section class="card"><h2>What “pattern car” means in the records</h2>
