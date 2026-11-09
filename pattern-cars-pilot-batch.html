@@ -219,44 +219,205 @@ footer .footer-meta a{min-height:48px;padding:10px 8px}
 .corr-appendix details[open]>summary::before{content:"▾ "}
 .corr-appendix .corr-body{padding:0 16px 16px;font-size:.95rem;line-height:1.55;color:var(--ink)}
 .corr-appendix .corr-date{display:block;font-size:.85rem;font-weight:700;color:var(--mut);margin-bottom:6px}
+
+/* Featured Framingham Judge — site focus */
+.featured-judge{margin:1.2em 0 1.6em;padding:22px 22px 18px;border-radius:18px;background:linear-gradient(180deg,#fffdf8,#f6f1e8);border:1px solid #e4ddd0;border-left:10px solid var(--red);box-shadow:0 10px 28px rgba(0,0,0,.06)}
+.featured-judge .kicker{margin:0 0 .35em;font-size:.78rem;font-weight:850;letter-spacing:.08em;text-transform:uppercase;color:var(--red)}
+.featured-judge h3{margin:0 0 .55em;font-size:clamp(1.35rem,3.2vw,1.85rem);line-height:1.2}
+.featured-judge .why{font-size:1.05rem;line-height:1.55;max-width:68ch;margin:0 0 .85em}
+.featured-judge .fact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px 16px;margin:0 0 1em;padding:0;list-style:none}
+.featured-judge .fact-grid li{margin:0;padding:10px 12px;background:#fff;border:1px solid #e8e1d4;border-radius:10px;font-size:.92rem;line-height:1.4}
+.featured-judge .fact-grid b{display:block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin-bottom:2px}
+.featured-judge .thumbs.hero-thumbs{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media(max-width:800px){.featured-judge{padding:16px}.featured-judge .thumbs.hero-thumbs{grid-template-columns:1fr}}
+.featured-judge .thumbs.hero-thumbs .tg img{aspect-ratio:5/4;object-fit:contain;background:#1a1a1a;padding:6px}
+.featured-judge .thumbs.hero-thumbs .tg figcaption{font-size:.9rem}
+
+/* Compact sibling DON 00017 cars — equal small cards */
+.don-siblings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:1em 0 0}
+@media(max-width:700px){.don-siblings{grid-template-columns:1fr}}
+.don-card{margin:0;padding:14px 14px 12px;background:#f7f4ee;border:1px solid #e4ddd0;border-radius:12px;border-left:5px solid #bbb}
+.don-card h3{margin:0 0 .4em;font-size:1.02rem;line-height:1.25}
+.don-card p{margin:0 0 .65em;font-size:.9rem;line-height:1.45;max-width:none}
+.don-card .thumbs.compact-thumbs{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:.4em 0 0}
+.don-card .thumbs.compact-thumbs .tg img{aspect-ratio:4/3;object-fit:cover}
+.don-card .thumbs.compact-thumbs .tg figcaption{padding:8px 9px 10px;font-size:.78rem;line-height:1.35;border-top-width:3px}
+.don-card .more{display:inline-block;margin-top:8px;font-size:.88rem;font-weight:800;color:var(--red-d);text-decoration:none}
+.don-card .more:hover{text-decoration:underline;text-underline-offset:3px}
+
+/* Home: lead focus on G125205 */
+.home-lead{display:grid;grid-template-columns:1.35fr .9fr;gap:18px;margin:1.1em 0 0;align-items:stretch}
+@media(max-width:800px){.home-lead{grid-template-columns:1fr}}
+.home-lead .lead-card{margin:0;padding:22px;background:linear-gradient(180deg,#fffdf8,#f6f1e8);border:1px solid #e4ddd0;border-radius:16px;border-left:10px solid var(--red)}
+.home-lead .lead-card h2{margin:0 0 .4em;font-size:clamp(1.3rem,3vw,1.7rem)}
+.home-lead .lead-card p{margin:0 0 .7em;max-width:none}
+.home-lead .lead-card .vin{font-size:1.15rem;font-weight:900;letter-spacing:.01em}
+.home-lead .side-stack{display:flex;flex-direction:column;gap:12px}
+.home-lead .side-card{margin:0;padding:14px 16px;background:#f7f4ee;border:1px solid #e4ddd0;border-radius:12px;border-left:5px solid #bbb;flex:1}
+.home-lead .side-card h3{margin:0 0 .35em;font-size:1rem}
+.home-lead .side-card p{margin:0;font-size:.9rem;line-height:1.45;max-width:none}
+.home-lead a.card-link{display:inline-flex;margin-top:10px;font-weight:850;text-decoration:none;color:var(--red-d)}
+.home-lead a.card-link:hover{text-decoration:underline;text-underline-offset:3px}
+.site-map article.secondary{border-left-color:#bbb;background:#faf8f4}
+.site-map article.secondary h3{font-size:1.02rem}
+.site-map article.secondary p{font-size:.9rem}
+.lab.hyp{background:#efe6ff;color:#4b2d7a}
+/* Al Diaz declaration table */
+.declaration{margin:0 0 1.4em;padding:20px 20px 16px;border-radius:16px;background:#fff;border:1px solid #e4ddd0;box-shadow:0 8px 22px rgba(0,0,0,.05)}
+.declaration .decl-kicker{margin:0 0 .3em;font-size:.76rem;font-weight:850;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+.declaration h2{margin:0 0 .55em;font-size:clamp(1.25rem,3vw,1.65rem);line-height:1.2}
+.declaration .decl-lede{margin:0 0 .85em;font-size:.98rem;line-height:1.55;max-width:72ch}
+.declaration .decl-meta{margin:0 0 1em;font-size:.9rem;color:var(--mut)}
+.declaration .tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0}
+.declaration table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:720px}
+.declaration th,.declaration td{border:1px solid #e0d9ce;padding:8px 10px;text-align:left;vertical-align:top}
+.declaration th{background:#f3efe7;font-weight:800;white-space:nowrap}
+.declaration tr.lead-row{background:#fff8f0}
+.declaration tr.lead-row td:first-child{font-weight:850;color:var(--red-d)}
+.declaration .pdf-link{margin:.9em 0 0;font-size:.9rem}
+.declaration .pdf-link a{font-weight:800;color:var(--red-d);text-decoration:none}
+.declaration .pdf-link a:hover{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:700px){.declaration{padding:14px}.declaration table{font-size:.82rem}}
 </style></head><body><header class="top"><div class="bar"><p class="brand"><b>1969 Pontiac GTO Judge: The Documented History</b></p><nav><a href="index.html">Home</a><a href="pattern-cars-pilot-batch.html" aria-current="page">DON 00017</a><a href="judge-timeline-1968-1969.html">Timeline</a><a href="research-history.html">Research history</a><a href="sources-evidence-policy.html">Sources &amp; policy</a><a href="open-questions.html">Open questions</a><a href="glossary.html">Glossary</a><a href="how-to-read-phs-papers.html">Reading PHS papers</a><a href="about-the-researcher.html">About</a><a href="submit-your-documents.html">Submit Your Documents</a></nav></div></header><div class="stripes" aria-hidden="true"></div>
 <div class="hero"><div class="in"><p class="page-updated">Last updated: November 9, 2026</p><h1>1969 GTO Judge Pattern Cars and the DON 00017 Cars</h1></div></div>
-<main><section class="card"><h2>What “pattern car” means in the records</h2>
+<main><section class="card declaration" id="lead-declaration">
+<p class="decl-kicker">Opens this page · Author’s declaration</p>
+<h2>Al Diaz’s Lead Production Car Declaration</h2>
+<p class="decl-lede">Al Diaz’s July 2026 declaration names VIN <b>242379G125205</b> (Framingham) as his lead production car for DON 00017. The table below is the web reading of that declaration. Claims such as “earliest” and “lead car” are <span class="lab hyp">Hypothesis</span> — Al’s stated position — except where a cell is labeled as a documented fact from the papers. The original PDF is linked; this web table uses document-corrected figures.</p>
+<p class="decl-meta">Signed Al Diaz · July 2026 · Sources named in the PDF: PHS invoice, broadcast/build sheet, Fisher Body cowl tag.</p>
+<div class="tw"><table>
+<tr>
+<th>#</th><th>Plant</th><th>VIN</th><th>DON</th><th>Cowl date</th><th>Invoice no.</th><th>Allocation</th><th>Trans</th><th>Interior</th><th>Key references</th>
+</tr>
+<tr class="lead-row">
+<td>1 (Lead)</td>
+<td>Framingham (G)</td>
+<td>242379G125205</td>
+<td>00017</td>
+<td>01B</td>
+<td>ZGA 453185</td>
+<td>29-991</td>
+<td>TH400 / TURB/HYDR</td>
+<td>Parchment (TR 257) · cowl FM 56607</td>
+<td>PHS + cowl + broadcast · <span class="lab hyp">Hypothesis</span> as lead / earliest</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Arlington (R)</td>
+<td>242379R130631</td>
+<td>00017</td>
+<td>01D</td>
+<td>ZRA 48845?</td>
+<td>24-991</td>
+<td>4 SPD</td>
+<td>Black (TR 258)</td>
+<td>PHS + cowl tag</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Fremont (Z)</td>
+<td>242379Z114103</td>
+<td>00017</td>
+<td>01E</td>
+<td>ZZA 468236</td>
+<td>23-991</td>
+<td>TH400</td>
+<td>Parchment (TR 257)</td>
+<td>PHS + cowl tag</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Atlanta (A)</td>
+<td>242379A119165</td>
+<td>00017</td>
+<td>02A</td>
+<td>ZAA 544415</td>
+<td>19-993</td>
+<td>TH400</td>
+<td>Parchment (TR 257)</td>
+<td>PHS + cowl tag</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Atlanta (A)</td>
+<td>242379A120714</td>
+<td>00017</td>
+<td>02C</td>
+<td>ZAB 55667?</td>
+<td>20-991</td>
+<td>4 SPD</td>
+<td>Parchment (TR 257)</td>
+<td>PHS + cowl tag</td>
+</tr>
+</table></div>
+<p class="pdf-link"><a href="docs/al-diaz-lead-production-car-declaration-july-2026.pdf" download>Download original PDF declaration (July 2026)</a> — web table reflects document corrections; earlier PDF wording is kept on the appendix.</p>
+</section>
+<section class="card" id="don-00017-cars">
+<h2>The five DON 00017 cars, one per zone</h2>
+<p>DON 00017 was one car per zone, not a five-car batch one per plant. <span class="lab fact">Documented fact</span> (Al’s ruling, Oct 20, 2026). Al’s Framingham car is featured first; the other four follow in the same compact card style.</p>
+<div class="featured-judge" id="g125205">
+<p class="kicker">Featured · Al’s car · Why this site exists</p>
+<h3>Framingham Judge VIN 242379G125205</h3>
+<p class="why">This Framingham-built DON 00017 Judge is the reason for this website. Its papers—PHS invoice, cowl tag and broadcast sheet—opened the wider look at the five DON 00017 cars and the Pontiac records behind them. It has the earliest invoice date and earliest cowl week of the five DON 00017 cars on file.</p>
+<ul class="fact-grid">
+<li><b>VIN / plant</b>242379G125205 · Framingham (G)</li>
+<li><b>DON</b>00017 <span class="lab fact">Documented fact</span></li>
+<li><b>Cowl</b>FM 56607 · 01B · TR 257 Parchment · paint 72 72 Carousel Red <span class="lab fact">Documented fact</span></li>
+<li><b>PHS invoice</b>ZGA 453185 · shipped 01/30/69 · zone 29 991 · Allen Pontiac, Belleville, N.J. <span class="lab fact">Documented fact</span></li>
+<li><b>Transmission</b>TURB/HYDR (351) <span class="lab fact">Documented fact</span></li>
+<li><b>Engine</b>YZ <span class="lab fact">Documented fact</span></li>
+</ul>
+<p>Earliest invoice date (01/30/69) and earliest cowl week (01B) among the five DON 00017 cars. <span class="lab fact">Documented fact</span> (Tier 2). First Framingham Judge (Framingham only). <span class="lab fact">Documented fact</span> (Al’s ruling, Oct 20, 2026). “First Judge built nationwide” is not claimed here. <span class="lab hyp">Hypothesis</span> / unresolved on the papers currently filed.</p>
+<p>Tap a larger image to open full size.</p>
+<div class="thumbs hero-thumbs">
+<figure class="tg doc"><a href="images/don00017-g125205-phs-invoice.jpg" target="_blank" rel="noopener" aria-label="Open full-size PHS invoice for 242379G125205"><img src="images/don00017-g125205-phs-invoice-hero.jpg" width="560" height="449" alt="PHS invoice ZGA 453185 for VIN 242379G125205, DON 00017, Allen Pontiac Belleville NJ" decoding="async"></a><figcaption><b>PHS invoice ZGA 453185, 01/30/69</b> — DON 00017; ship-to 29 991; Allen Pontiac. <span class="lab fact">Documented fact</span></figcaption></figure>
+<figure class="tg doc"><a href="images/don00017-g125205-cowl-fm56607.jpg" target="_blank" rel="noopener" aria-label="Open full-size cowl tag FM 56607"><img src="images/don00017-g125205-cowl-fm56607-hero.jpg" width="560" height="358" alt="Cowl tag FM 56607: TR 257, paint 72 72, date 01B" decoding="async"></a><figcaption><b>Cowl tag FM 56607</b> — TR 257 Parchment, paint 72 72, 01B. <span class="lab fact">Documented fact</span></figcaption></figure>
+<figure class="tg doc"><a href="images/don00017-g125205-broadcast.jpg" target="_blank" rel="noopener" aria-label="Open full-size broadcast sheet for 242379G125205"><img src="images/don00017-g125205-broadcast-hero.jpg" width="560" height="433" alt="Broadcast sheet order number 000017 for Framingham Judge 242379G125205" decoding="async"></a><figcaption><b>Broadcast sheet</b> — order number 000017, matching DON 00017. <span class="lab fact">Documented fact</span></figcaption></figure>
+</div>
+</div>
+<h3 class="siblings-label" style="margin:1.4em 0 .55em;font-size:1.05rem;color:var(--mut);font-weight:800;letter-spacing:.02em;text-transform:uppercase">The other DON 00017 cars</h3>
+<p style="margin:0 0 .8em;font-size:.95rem;max-width:68ch">Same dealer order number, different plants and zones. Short notes and small document thumbs; open a thumbnail for the full image.</p>
+<div class="don-siblings">
+<article class="don-card" id="z114103">
+<h3>Fremont · 242379Z114103</h3>
+<p>Invoice ZZA 468236 (02/05/69) prints DON 00017 and THE JUDGE 554; Cunha Pontiac, Berkeley; ship-to 23 991. <span class="lab fact">Documented fact</span></p>
+<div class="thumbs compact-thumbs">
+<figure class="tg doc"><a href="images/don00017-z114103-phs-invoice.jpg" target="_blank" rel="noopener"><img src="images/don00017-z114103-phs-invoice-compact.jpg" width="168" height="131" alt="PHS invoice ZZA 468236 for 242379Z114103" loading="lazy" decoding="async"></a><figcaption>Invoice 02/05/69</figcaption></figure>
+<figure class="tg doc"><a href="images/don00017-z114103-cowl-tag.jpg" target="_blank" rel="noopener"><img src="images/don00017-z114103-cowl-tag-compact.jpg" width="168" height="70" alt="Cowl tag for Fremont DON 00017 car" loading="lazy" decoding="async"></a><figcaption>Cowl tag</figcaption></figure>
+</div>
+</article>
+<article class="don-card" id="a119165">
+<h3>Atlanta · 242379A119165</h3>
+<p>PHS invoice prints DON 00017 and VIN 242379A119165; Big 4 Pontiac-Cadillac, Tupelo; shipped 03/10/69. <span class="lab fact">Documented fact</span> Cowl ATL 514562 matched by Al’s declaration. <span class="lab interp">Corroborated interpretation</span></p>
+<div class="thumbs compact-thumbs">
+<figure class="tg doc"><a href="images/don00017-a119165-phs-invoice.jpg" target="_blank" rel="noopener"><img src="images/don00017-a119165-phs-invoice-compact.jpg" width="168" height="126" alt="PHS invoice for 242379A119165" loading="lazy" decoding="async"></a><figcaption>Invoice</figcaption></figure>
+<figure class="tg doc"><a href="images/don00017-a119165-cowl-atl514562.jpg" target="_blank" rel="noopener"><img src="images/don00017-a119165-cowl-atl514562-compact.jpg" width="168" height="80" alt="Cowl tag ATL 514562" loading="lazy" decoding="async"></a><figcaption>Cowl ATL 514562</figcaption></figure>
+</div>
+</article>
+<article class="don-card" id="a120714">
+<h3>Atlanta · 242379A120714</h3>
+<p>Invoice ZAB 55667 (03/07/69) prints THE JUDGE 554; Stevenson Motor Co., Canyon, Tex.; ship-to 20 991. <span class="lab fact">Documented fact</span> DON field hard to read. Cowl ATL 513284 matched by Al’s declaration. <span class="lab interp">Corroborated interpretation</span></p>
+<div class="thumbs compact-thumbs">
+<figure class="tg doc"><a href="images/don00017-a120714-phs-invoice.jpg" target="_blank" rel="noopener"><img src="images/don00017-a120714-phs-invoice-compact.jpg" width="168" height="128" alt="PHS invoice ZAB 55667 for 242379A120714" loading="lazy" decoding="async"></a><figcaption>Invoice 03/07/69</figcaption></figure>
+<figure class="tg doc"><a href="images/don00017-a120714-cowl-atl513284.jpg" target="_blank" rel="noopener"><img src="images/don00017-a120714-cowl-atl513284-compact.jpg" width="168" height="72" alt="Cowl tag ATL 513284" loading="lazy" decoding="async"></a><figcaption>Cowl ATL 513284</figcaption></figure>
+</div>
+</article>
+<article class="don-card" id="r130631">
+<h3>Arlington · 242379R130631</h3>
+<p>Invoice copy 02/12/69 prints DON 00017; Pat Clark Pontiac, Las Vegas; ship-to 24 991. <span class="lab fact">Documented fact</span> (Tier 2, poor copy). Cowl 01D, TR 258 Black, paint 72 72.</p>
+<div class="thumbs compact-thumbs">
+<figure class="tg doc"><a href="images/don00017-r130631-phs-invoice.jpg" target="_blank" rel="noopener"><img src="images/don00017-r130631-phs-invoice-compact.jpg" width="168" height="196" alt="PHS invoice copy for 242379R130631" loading="lazy" decoding="async"></a><figcaption>Invoice copy</figcaption></figure>
+<figure class="tg doc"><a href="images/don00017-r130631-cowl-tag.jpg" target="_blank" rel="noopener"><img src="images/don00017-r130631-cowl-tag-compact.jpg" width="168" height="126" alt="Arlington cowl tag 01D" loading="lazy" decoding="async"></a><figcaption>Cowl tag</figcaption></figure>
+</div>
+<a class="more" href="arlington-judge-r130631.html">Full Arlington page →</a>
+</article>
+</div>
+</section>
+
+<section class="card"><h2>What “pattern car” means in the records</h2>
 <p>The May 8, 1969 Goad memo states production began “in mid January with 1,000 pattern cars being built in Carousel Red only.” <span class="lab fact">Documented fact</span> (Tier 2)</p>
 <p>Factory invoices for early Judges often print a low dealer order number (000xx) and a ship-to ending in 991, 992, 993 or 995 rather than a normal dealer code. <span class="lab fact">Documented fact</span> for the invoices read (Tier 2, PHS invoice copies). That these markings identify the pattern-car program is a <span class="lab interp">Corroborated interpretation</span>; no Pontiac page on file defines them.</p>
 <p>Car Distribution Bulletin 69-48 does not mention pattern cars, a 1,000-car batch, dealer order numbers or zone 991. <span class="lab fact">Documented fact</span></p>
-</section><section class="card"><h2>The five DON 00017 cars, one per zone</h2>
-<p>DON 00017 was one car per zone, not a five-car batch one per plant. <span class="lab fact">Documented fact</span> (Al’s ruling, Oct 20, 2026).</p>
-<p>Five Carousel Red Judges built in mid-January 1969 carry dealer order number 00017: one at Framingham, two at Atlanta, one at Arlington and one at Fremont. <span class="lab fact">Documented fact</span> for the Framingham, Fremont and Arlington invoices (the Arlington copy is poor but prints DON 00017; see its page below). Atlanta VIN 242379A119165 has a PHS invoice that prints DON 00017 (<span class="lab fact">Documented fact</span>, Tier 2). Cowl tags matched to 242379A119165 and 242379A120714 by Al’s declaration remain a <span class="lab interp">Corroborated interpretation</span>. The A120714 invoice is on file; its DON field is hard to read on that copy.</p>
-<h3>The Framingham lead unit (VIN 242379G125205)</h3>
-<p>The Framingham DON 00017 car, VIN 242379G125205, has the earliest invoice date (01/30/69) and earliest cowl week (01B) of the five DON 00017 cars on file, which is why the research calls it the lead unit of the five. <span class="lab fact">Documented fact</span> as to the dates (Tier 2: PHS invoice ZGA 453185; broadcast sheet; cowl tag). Ship-to 29 991, South Kearny, N.J.; sold through Allen Pontiac, Belleville, N.J.; Carousel Red; option 554 The Judge. <span class="lab fact">Documented fact</span></p>
-<p>“Lead unit” means earliest of these five on paper. It does not mean the first Judge built nationwide. <span class="lab interp">Corroborated interpretation</span></p>
-<p>This car is the first Framingham Judge (Framingham only). <span class="lab fact">Documented fact</span> (Al’s ruling, Oct 20, 2026).</p>
-<p>Why this car went to zone 29 / 991, and whether it served as a show, prize or drive-away car: <span class="lab unres">Unresolved</span></p>
-<p>Tap or click a thumbnail to open the full-size image.</p>
-<div class="thumbs"><figure class="tg doc"><a href="images/don00017-g125205-phs-invoice.jpg" target="_blank" rel="noopener" aria-label="Open full-size image: Pontiac Motor Division invoice for VIN 242379G125205 showing DON 00017 and Allen Pontiac Belleville NJ"><img src="images/don00017-g125205-phs-invoice-thumb.jpg" width="420" height="337" alt="Pontiac Motor Division invoice for VIN 242379G125205 showing DON 00017 and Allen Pontiac Belleville NJ" decoding="async"></a><figcaption><b>PHS invoice ZGA 453185, 01/30/69</b> (Tier 2). Prints DON 00017, THE JUDGE 554; ship-to 29 991; Allen Pontiac, Belleville, N.J. <span class="lab fact">Documented fact</span></figcaption></figure><figure class="tg doc"><a href="images/don00017-g125205-cowl-fm56607.jpg" target="_blank" rel="noopener" aria-label="Open full-size image: Fisher Body cowl tag stamped ST 69-24237 FM 56607, TR 257, paint 72 72, date 01B"><img src="images/don00017-g125205-cowl-fm56607-thumb.jpg" width="420" height="269" alt="Fisher Body cowl tag stamped ST 69-24237 FM 56607, TR 257, paint 72 72, date 01B" decoding="async"></a><figcaption><b>Cowl tag FM 56607:</b> TR 257 Parchment, paint 72 72, date 01B. <span class="lab fact">Documented fact</span> The tag does not print the VIN.</figcaption></figure><figure class="tg doc"><a href="images/don00017-g125205-broadcast.jpg" target="_blank" rel="noopener" aria-label="Open full-size image: Broadcast sheet for Framingham Judge VIN 242379G125205 showing order number 000017"><img src="images/don00017-g125205-broadcast-thumb.jpg" width="420" height="325" alt="Broadcast sheet for Framingham Judge VIN 242379G125205 showing order number 000017" decoding="async"></a><figcaption><b>Broadcast / build sheet</b> (Tier 2 copy). Order number reads 000017, matching PHS DON 00017. <span class="lab fact">Documented fact</span> (Al’s reading of the original; close-up with the fold lifted is still welcome).</figcaption></figure></div>
-
-<h3>Fremont: VIN 242379Z114103</h3>
-<p>PHS invoice ZZA 468236, dated 02/05/69, prints DON 00017, THE JUDGE 554 and TURB/HYDR 351. Sold through Cunha Pontiac Inc., Berkeley, Cal.; dealer 23 093; ship-to 23 991. <span class="lab fact">Documented fact</span> (Tier 2)</p>
-<p>Tap or click a thumbnail to open the full-size image.</p>
-<div class="thumbs"><figure class="tg doc"><a href="images/don00017-z114103-phs-invoice.jpg" target="_blank" rel="noopener" aria-label="Open full-size image: Pontiac Motor Division invoice for VIN 242379Z114103 showing DON 00017 and Cunha Pontiac Berkeley"><img src="images/don00017-z114103-phs-invoice-thumb.jpg" width="420" height="328" alt="Pontiac Motor Division invoice for VIN 242379Z114103 showing DON 00017 and Cunha Pontiac Berkeley" loading="lazy" decoding="async"></a><figcaption><b>PHS invoice ZZA 468236, 02/05/69</b> (Tier 2). Prints DON 00017, THE JUDGE 554, TURB/HYDR 351; Cunha Pontiac Inc., Berkeley, Cal.; ship-to 23 991. <span class="lab fact">Documented fact</span></figcaption></figure><figure class="tg doc"><a href="images/don00017-z114103-cowl-tag.jpg" target="_blank" rel="noopener" aria-label="Open full-size image: Fisher Body cowl tag from Fremont-built Judge VIN 242379Z114103"><img src="images/don00017-z114103-cowl-tag-thumb.jpg" width="420" height="176" alt="Fisher Body cowl tag from Fremont-built Judge VIN 242379Z114103" loading="lazy" decoding="async"></a><figcaption><b>Cowl tag</b> for the Fremont car (Tier 2 photo). <span class="lab fact">Documented fact</span> for what the tag shows; the tag does not print the VIN.</figcaption></figure></div>
-<h3>Atlanta: VIN 242379A119165</h3>
-<p>PHS invoice prints DON 00017, THE JUDGE 554 and VIN 242379A119165 (Big 4 Pontiac-Cadillac Co., Tupelo, Miss.; shipped 03/10/69). <span class="lab fact">Documented fact</span> (Tier 2)</p>
-<p>The dash VIN plate reads 242379A119165. <span class="lab fact">Documented fact</span></p>
-<p>Cowl tag ATL 514562 shows TR 257 Parchment, paint 72 72 and date 02A (partly hidden by the rivet). Matching that tag to this VIN rests on Al’s declaration; no photo yet shows the tag and VIN on the same car. <span class="lab interp">Corroborated interpretation</span></p>
-<p>Tap or click a thumbnail to open the full-size image.</p>
-<div class="thumbs"><figure class="tg doc"><a href="images/don00017-a119165-phs-invoice.jpg" target="_blank" rel="noopener" aria-label="Open full-size image: Pontiac Motor Division invoice for VIN 242379A119165 showing DON 00017 and THE JUDGE option 554"><img src="images/don00017-a119165-phs-invoice-thumb.jpg" width="420" height="315" alt="Pontiac Motor Division invoice for VIN 242379A119165 showing DON 00017 and THE JUDGE option 554" loading="lazy" decoding="async"></a><figcaption><b>PHS invoice, 03/04 (shipped 03/10/69)</b> (Tier 2). Prints DON 00017, THE JUDGE 554, VIN 242379A119165; Big 4 Pontiac-Cadillac Co., Tupelo, Miss. <span class="lab fact">Documented fact</span></figcaption></figure><figure class="tg doc"><a href="images/don00017-a119165-vin-plate.jpg" target="_blank" rel="noopener" aria-label="Open full-size image: Dash VIN plate embossed 242379A119165"><img src="images/don00017-a119165-vin-plate-thumb.jpg" width="420" height="165" alt="Dash VIN plate embossed 242379A119165" loading="lazy" decoding="async"></a><figcaption><b>Dash VIN plate</b> reads 242379A119165. <span class="lab fact">Documented fact</span></figcaption></figure><figure class="tg doc"><a href="images/don00017-a119165-cowl-atl514562.jpg" target="_blank" rel="noopener" aria-label="Open full-size image: Fisher Body cowl tag stamped ST 69-24237 ATL 514562, TR 257, paint 72 72, date 02A"><img src="images/don00017-a119165-cowl-atl514562-thumb.jpg" width="420" height="200" alt="Fisher Body cowl tag stamped ST 69-24237 ATL 514562, TR 257, paint 72 72, date 02A" loading="lazy" decoding="async"></a><figcaption><b>Cowl tag ATL 514562:</b> TR 257 Parchment, paint 72 72, date 02A (partly hidden by rivet). Matched to this VIN by Al’s declaration. <span class="lab interp">Corroborated interpretation</span>; the tag does not print the VIN.</figcaption></figure></div>
-<h3>Atlanta: VIN 242379A120714</h3>
-<p>Cowl tag ATL 513284 shows TR 257 Parchment, paint 72 72 and date 02C. Matching that tag to this VIN rests on Al’s declaration; no photo yet shows the tag and VIN on the same car. <span class="lab interp">Corroborated interpretation</span></p>
-<p>ATL 513284 has a lower body number than ATL 514562 but a later date. Fisher body numbers did not always run in build order. <span class="lab interp">Corroborated interpretation</span></p>
-<p>PHS invoice ZAB 55667, dated 03/07/69, prints 4 SPD 354, THE JUDGE 554, Stevenson Motor Co., Canyon, Tex.; dealer 20 519; ship-to 20 991. <span class="lab fact">Documented fact</span> for what the invoice prints (Tier 2). DON field hard to read on this copy.</p>
-<p>Tap or click a thumbnail to open the full-size image.</p>
-<div class="thumbs"><figure class="tg doc"><a href="images/don00017-a120714-phs-invoice.jpg" target="_blank" rel="noopener" aria-label="Open full-size image: Pontiac Motor Division invoice for VIN 242379A120714 dated 03/07/69 Stevenson Motor Co Canyon Texas"><img src="images/don00017-a120714-phs-invoice-thumb.jpg" width="420" height="321" alt="Pontiac Motor Division invoice for VIN 242379A120714 dated 03/07/69 Stevenson Motor Co Canyon Texas" loading="lazy" decoding="async"></a><figcaption><b>PHS invoice ZAB 55667, 03/07/69</b> (Tier 2). Prints 4 SPD 354, THE JUDGE 554; Stevenson Motor Co., Canyon, Tex.; ship-to 20 991. DON field hard to read on this copy. <span class="lab fact">Documented fact</span> for what is clear.</figcaption></figure><figure class="tg doc"><a href="images/don00017-a120714-cowl-atl513284.jpg" target="_blank" rel="noopener" aria-label="Open full-size image: Fisher Body cowl tag stamped ST 69-24237 ATL 513284, TR 257, paint 72 72, date 02C"><img src="images/don00017-a120714-cowl-atl513284-thumb.jpg" width="420" height="181" alt="Fisher Body cowl tag stamped ST 69-24237 ATL 513284, TR 257, paint 72 72, date 02C" loading="lazy" decoding="async"></a><figcaption><b>Cowl tag ATL 513284:</b> TR 257 Parchment, paint 72 72, date 02C. Matched to this VIN by Al’s declaration. <span class="lab interp">Corroborated interpretation</span>; the tag does not print the VIN.</figcaption></figure></div>
-<h3>Arlington: VIN 242379R130631</h3>
-<p>PHS invoice copy dated 02/12/69 prints DON 00017; sold through Pat Clark Pontiac, Las Vegas; ship-to 24 991. <span class="lab fact">Documented fact</span> (Tier 2, poor copy). Full page with car photos: <a href="arlington-judge-r130631.html">The Arlington-built DON 00017 Judge</a>.</p>
-<p>Tap or click a thumbnail to open the full-size image.</p>
-<div class="thumbs"><figure class="tg doc"><a href="images/don00017-r130631-phs-invoice.jpg" target="_blank" rel="noopener" aria-label="Open full-size image: Poor photocopy of PHS invoice for VIN 242379R130631 showing DON 00017 and Pat Clark Pontiac Las Vegas"><img src="images/don00017-r130631-phs-invoice-thumb.jpg" width="420" height="491" alt="Poor photocopy of PHS invoice for VIN 242379R130631 showing DON 00017 and Pat Clark Pontiac Las Vegas" loading="lazy" decoding="async"></a><figcaption><b>PHS invoice copy, 02/12/69</b> (Tier 2, poor copy). Prints DON 00017; Pat Clark Pontiac, Las Vegas. <span class="lab fact">Documented fact</span> for what the copy shows.</figcaption></figure><figure class="tg doc"><a href="images/don00017-r130631-cowl-tag.jpg" target="_blank" rel="noopener" aria-label="Open full-size image: Fisher Body cowl tag stamped ST 69-24237, TR 258, paint 72 72, date 01D"><img src="images/don00017-r130631-cowl-tag-thumb.jpg" width="420" height="315" alt="Fisher Body cowl tag stamped ST 69-24237, TR 258, paint 72 72, date 01D" loading="lazy" decoding="async"></a><figcaption><b>Cowl tag:</b> ST 69-24237, TR 258 Black, paint 72 72, date 01D. <span class="lab fact">Documented fact</span> for what the tag prints; it does not print the VIN.</figcaption></figure><figure class="tg doc"><a href="images/don00017-r130631-zoom-vin.jpg" target="_blank" rel="noopener" aria-label="Open full-size image: Zoom crop of the VIN area on the Arlington PHS invoice copy"><img src="images/don00017-r130631-zoom-vin-thumb.jpg" width="420" height="84" alt="Zoom crop of the VIN area on the Arlington PHS invoice copy" loading="lazy" decoding="async"></a><figcaption><b>Invoice zoom — VIN area.</b> Helps read 242379R13063… on the poor copy. <span class="lab fact">Documented fact</span> for what is visible.</figcaption></figure><figure class="tg doc"><a href="images/don00017-r130631-zoom-don.jpg" target="_blank" rel="noopener" aria-label="Open full-size image: Zoom crop of the dealer order number area on the Arlington PHS invoice copy"><img src="images/don00017-r130631-zoom-don-thumb.jpg" width="420" height="215" alt="Zoom crop of the dealer order number area on the Arlington PHS invoice copy" loading="lazy" decoding="async"></a><figcaption><b>Invoice zoom — DON area.</b> Helps read DON 00017 on the poor copy. <span class="lab fact">Documented fact</span> for what is visible.</figcaption></figure><figure class="tg doc"><a href="images/don00017-r130631-zoom-dealer.jpg" target="_blank" rel="noopener" aria-label="Open full-size image: Zoom crop of the dealer name on the Arlington PHS invoice copy"><img src="images/don00017-r130631-zoom-dealer-thumb.jpg" width="420" height="71" alt="Zoom crop of the dealer name on the Arlington PHS invoice copy" loading="lazy" decoding="async"></a><figcaption><b>Invoice zoom — dealer.</b> Pat Clark Pontiac, Las Vegas. <span class="lab fact">Documented fact</span> for what is visible.</figcaption></figure></div>
-
 </section><section class="card"><h2>Separate stories kept separate</h2>
 <ol><li><b>The Framingham DON 00017 lead unit</b> (above).</li>
 <li><b>A company-car account</b> told in correspondence about a Baltimore-built car said to have been sold to a California Pontiac dealer with low mileage. No VIN or factory paper on file. <span class="lab unres">Unresolved</span> It is not linked to the Framingham car.</li>
