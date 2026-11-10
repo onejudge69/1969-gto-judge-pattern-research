@@ -242,6 +242,7 @@ blockquote p{margin:0}
 .foot-note{margin:12px 0 0;font-size:.8rem;color:#9b9892;max-width:90ch}
 .foot-appx{margin:10px 0 0;font-size:.78rem}
 .foot-appx a{color:#9b9892}
+.foot-visits{margin:8px 0 0;font-size:.78rem;color:#9b9892}
 
 /* ---------- tablet / phone ---------- */
 @media (max-width:980px){
