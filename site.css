@@ -315,3 +315,13 @@ blockquote p{margin:0}
 .tl+.after{margin-top:14px}
 .photos{margin:0}
 .pair>span,.pa{display:block}
+
+/* homepage: How this research uses AI */
+.ai-use h2{font-size:1.3rem;margin-bottom:.6em}
+.ai-use figure img{width:100%;border-radius:8px;border:1px solid var(--line)}
+.ai-use .lead{margin:0 0 16px}
+.ai-use .ai-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,220px);gap:26px;align-items:start}
+@media (max-width:760px){
+  .ai-use .ai-body{grid-template-columns:1fr}
+  .ai-use .second{max-width:240px;margin:12px auto 0}
+}
