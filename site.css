@@ -325,3 +325,5 @@ blockquote p{margin:0}
   .ai-use .ai-body{grid-template-columns:1fr}
   .ai-use .second{max-width:240px;margin:12px auto 0}
 }
+.ai-use h2 a{color:inherit;text-decoration:none}
+.ai-use h2 a:hover{color:var(--red-d);text-decoration:underline}
