@@ -315,3 +315,12 @@ blockquote p{margin:0}
 .tl+.after{margin-top:14px}
 .photos{margin:0}
 .pair>span,.pa{display:block}
+
+/* homepage: How this research uses AI */
+.ai-use{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,300px);gap:26px;align-items:start}
+.ai-use figure img{width:100%;border-radius:8px;border:1px solid var(--line)}
+.ai-use h2{font-size:1.3rem;margin-bottom:.6em}
+@media (max-width:760px){
+  .ai-use{grid-template-columns:1fr}
+  .ai-use figure{max-width:340px;margin:0 auto 8px;order:-1}
+}
