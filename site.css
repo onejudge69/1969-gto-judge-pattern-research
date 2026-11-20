@@ -43,6 +43,7 @@ code{background:#efece4;padding:1px 5px;border-radius:4px;font-size:.92em}
 .page-title h1{font-size:clamp(1.45rem,2.4vw + .6rem,2.05rem);letter-spacing:-.01em}
 .page-title .upd{margin:0 0 4px;color:var(--mut);font-size:.82rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
 .page-title .lead{margin:.55em 0 0;color:#38353c;font-size:1.05rem;max-width:80ch}
+.page-title .join-fb{margin:.9em 0 0}
 
 /* ---------- layout ---------- */
 .wrap{max-width:var(--wrap);margin:0 auto;padding:20px 20px 36px}
